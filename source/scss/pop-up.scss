@@ -1,0 +1,98 @@
+.pop-up {
+    background-color: #353436;
+    border: 1px solid #c9c9c9;
+    padding: 10px 79px 27px 77px;
+    width: 596px;
+    height: 361px;
+    box-sizing: border-box;
+    position: absolute;
+    top: 260px;
+    left: 50%;
+    margin-left: -298px;
+    display: none;
+    
+    &--show {
+        display: block;
+        z-index: 10;
+    }
+
+    &__header {
+        font-size: 23px;
+        line-height: 23px;
+        font-family: 'Playfair';
+        text-transform: uppercase;
+        text-align: center;
+        color: white;
+        margin-bottom: 18px;
+    }
+
+    &__legend {
+        font-family: 'Playfair';
+        font-size: 18px;
+        line-height: 24px;
+        text-transform: uppercase;
+        color: white;
+        margin-bottom: 10px;
+    }
+
+    &__wrapper {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    &__close {
+        position: absolute;
+        top: 11px;
+        right: 20px;
+        width: 23px;
+        height: 22px;
+        padding: 0;
+        cursor: pointer;
+        background-color: transparent;
+        border: none;
+
+        &:focus {
+            outline: none;
+        }
+
+        &:active {
+            border: none;
+        }
+
+        &::before {
+            content: '';
+            display: block;
+            width: 32px;
+            height: 1px;
+            background-color: white;
+            transform: rotate(-45deg);
+        }
+        
+        &::after {
+            content: '';
+            display: block;
+            width: 32px;
+            height: 1px;
+            background-color: white;
+            transform: rotate(45deg);
+        }
+    }
+}
+
+@media(max-width: 768px) {
+    .pop-up {
+        width: 300px;
+        height: auto;
+        margin-left: -150px;
+        padding: 15px;
+
+        &__wrapper {
+            display: block;
+        }
+        
+        &__header {
+            text-align: left;
+        }
+    }
+}

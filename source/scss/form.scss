@@ -1,0 +1,71 @@
+.form {
+
+    &__fieldset {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        border: none;
+        padding: 0;
+    }
+
+    &__title {
+        font-family: 'Playfair';
+        font-size: 14px;
+        line-height: 24px;
+        color: #ffffff;
+        margin-bottom: 22px;
+        text-transform: uppercase;
+    }
+
+    &__input {
+        &:first-child {
+            margin-bottom: 12px;
+        }
+    }
+
+    &__label {
+        font-family: 'Open sans';
+        font-size: 10px;
+        line-height: 24px;
+        color: #b5b4b4;
+    }
+
+    &__checkbox {
+        margin: 0;
+        margin-right: 8px;
+        width: 8px;
+        height: 8px;
+    }
+
+    &__button {
+        width: 185px;
+        height: 32px;
+        border: none;
+        text-transform: uppercase;
+        color:#ffffff;
+        cursor: pointer;
+        background-color: black;
+        font-size: 17px;
+        line-height: 23px;
+        font-family: 'Open sans';
+        &:focus {
+            outline: none;
+        }
+        &:hover {
+            background-color: #e2d1a6;
+        }
+
+        &:active {
+            background-color: #efc762;
+        }
+    
+    }
+}
+
+@media(max-width: 768px) {
+    .form {
+        &__button {
+            width: 100%;
+        }
+    }
+}

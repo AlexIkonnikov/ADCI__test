@@ -1,0 +1,38 @@
+.slick-list {
+    position: relative;
+}
+
+.slick-dots {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    margin-left: -31px;
+}
+.slick-dots button {
+    padding: 0;
+    box-sizing: border-box;
+    display: block;
+    width: 14px;
+    height: 14px;
+    border: 1px solid black;
+    border-radius: 50%;
+    background-color: white;
+    font-size: 0;
+    margin-right: 10px;
+}
+.slick-dots button:focus {
+    outline: none;
+}
+
+.slick-dots button:active {
+    outline: none;
+}
+
+.slick-dots li:nth-child(3) button {
+    margin: 0;
+}
+.slick-active button {
+    background-color: #e2d1a6;
+}

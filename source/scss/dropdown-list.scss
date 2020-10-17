@@ -1,0 +1,24 @@
+.dropdown-list {
+    background-color: #353436;
+    &__item {
+        margin-left: 9px;
+        margin-right: 8px;
+        margin-bottom: 8px;
+        border-bottom: 1px solid white;
+
+        &:last-child {
+            border: none;
+        }
+    }
+
+    &__link {
+        padding-bottom: 7px;
+        font-size: 16px;
+        line-height: 24px;
+        font-family: 'Open sans';
+        text-transform: uppercase;
+        &:hover {
+            color: #e2d1a6;
+        }
+    }
+}

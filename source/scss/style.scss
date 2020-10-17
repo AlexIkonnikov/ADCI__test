@@ -1,0 +1,54 @@
+@font-face {
+    font-family: 'Playfair';
+    src: url("../fonts/PlayfairDisplay-Bold.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PlayfairItalic';
+    src: url("../fonts/PlayfairDisplay-BoldItalic.ttf");
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Open sans';
+    src: url("../fonts/OpenSans-Light.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+.visually-hidden {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    border: 0;
+    padding: 0;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    white-space: nowrap;
+    -webkit-clip-path: inset(100%);
+            clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden; 
+}
+
+@import "min-reset.scss";
+@import "main-header.scss";
+@import "main-content.scss";
+@import "footer.scss";
+@import "navigation.scss";
+@import "page.scss";
+@import "contact-info.scss";
+@import "languages.scss";
+@import "social.scss";
+@import "news.scss";
+@import "about-us.scss";
+@import "form.scss";
+@import "aside.scss";
+@import "text-input.scss";
+@import "pop-up.scss";
+@import "slider.scss";
+@import "dropdown-list.scss";
+@import "overlay.scss";
+@import "slick-custom.scss";

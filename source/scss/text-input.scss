@@ -1,0 +1,26 @@
+.text-input {
+    width: 184px;
+    height: 32px;
+    box-sizing: border-box;
+    padding: 12px 6px 6px;
+    border: none;
+
+    &--mb-7 {
+        margin-bottom: 7px;
+    }
+    &--mb-9 {
+        margin-bottom: 9px;
+    }
+    &--mb-12 {
+        margin-bottom: 12px;
+    }
+    &--mb-14 {
+        margin-bottom: 14px;
+    }
+}
+
+@media(max-width: 768px) {
+    .text-input {
+        width: 100%;
+    }
+}

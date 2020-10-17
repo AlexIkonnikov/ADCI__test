@@ -1,0 +1,26 @@
+.social {
+    &__list {
+        min-width: 72px;
+    }
+
+    &__item {
+        display: inline-block;
+        margin-right: 10px;
+
+        &:last-child {
+            margin-left: 0;
+        }
+    }
+}
+
+@media(max-width: 1024px) {
+    .social {
+        &__item {
+            display: block;
+            margin-bottom: 5px;
+        }
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}

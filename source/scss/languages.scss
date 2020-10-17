@@ -1,0 +1,41 @@
+.languages {
+    &__list {
+        min-width: 160px;
+        font-size: 14px;
+        line-height: 24px;
+        font-family: 'Open sans';
+    }
+
+    &__item {
+        display: inline-block;
+        padding-right: 9px;
+        border-right: 1px solid white;
+        margin-right: 10px;
+        &:last-child {
+            padding: 0;
+            margin-right: 0;
+            border: none;
+        }
+    }
+
+    &__link {
+        &:hover {
+            color: #e2d1a6;
+        }
+    }
+}
+
+@media(max-width: 1024px) {
+    .languages {
+        &__list {
+            min-width: auto;
+        }
+
+        &__item {
+            display: block;
+            margin: 0;
+            padding: 0;
+            border: none;
+        }
+    }
+}

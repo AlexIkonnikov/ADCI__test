@@ -1,0 +1,53 @@
+.about-us {
+    &__list {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;   
+        width: 680px;
+
+        font-family: 'Open sans';
+        font-size: 12px;
+        line-height: 16px;
+        color: #ffffff;
+    }
+
+    &__item {
+        max-width: 190px;
+    }
+
+    &__header {
+        font-family: 'Playfair';
+        font-size: 14px;
+        line-height: 24px;
+        color: #fefefe;
+        margin-bottom: 20px;
+        text-transform: uppercase;
+    }
+
+    &__text {
+        width: 180px;
+    }
+}
+
+@media(max-width: 768px) {
+    .about-us {
+        &__list {
+            display: block;
+            width: auto;
+        }
+
+        &__item {
+            max-width: initial;
+            margin-bottom: 10px;
+        }
+
+        &__header {
+            margin-bottom: 10px;
+        }
+
+        &__text {
+            width: 100%;
+        }
+    }
+}

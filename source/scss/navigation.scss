@@ -1,0 +1,123 @@
+.navigation {
+    &__toggle {
+        display: none;
+        border: none;
+        background: transparent;
+        cursor: pointer;
+        width: 20px;
+        height: 27px;
+        padding: 0;
+        outline: none;
+
+        &:focus {
+            outline: none;
+        }
+
+        &:active {
+            outline: none;
+        }
+
+        &:after {
+            content: '';
+            display: block;
+            width: 20px;
+            height: 3px;
+            background-color: white;
+            box-shadow: 0px 9px white, 0px 18px white;
+        }
+    }
+    &__list{
+        min-width: 460px;
+        display: flex;
+        justify-content: space-between;
+
+        font-size: 18px;
+        line-height: 24px;
+        color: #ffffff;
+        text-transform: uppercase;
+        font-family: 'Open sans';
+        font-weight: 700;
+    }
+
+    &__item {
+        position: relative;
+        padding-left: 17px;
+        &:first-child {
+            padding: 0;
+        }
+    }
+
+    &__link {
+        &:hover {
+            color: #e2d1a6;
+        }
+    }
+
+    &__dropdown-list {
+        display: none;
+        position: absolute;
+        top: 20px;
+        left: 0px;
+        z-index: 1;
+        padding-top: 25px;
+    }
+
+}
+
+@media(min-width: 1024px){
+    .navigation {
+        &__item {
+            &:hover  .navigation__dropdown-list {
+                display: block;
+            }
+        }
+    }
+}
+
+@media(max-width:1024px) {
+    .navigation {
+        &__toggle {
+            display: block;
+            margin-bottom: 10px;
+            margin-left: auto;
+        }
+
+        &__list {
+            display: none;
+            min-width: auto;
+            margin-top: 15px;
+            background-color: gray;
+            border-radius: 10px;
+            &--open {
+                display: block;
+            }
+        }
+
+        &__dropdown-list {
+            position: static;
+            padding-top:5px;
+            border: 1px solid;
+            box-sizing: border-box;
+            &--open{
+                display: block;
+            }
+        }
+
+        &__item {
+            margin-bottom: 5px;
+            padding-left: 10px;
+            padding-top: 10px;
+
+            &:first-child {
+                padding-left: 10px; 
+                padding-top: 10px;
+            }
+        }
+    }
+}
+
+@media(max-width:768px) {
+    .navigation {
+
+    }
+}
